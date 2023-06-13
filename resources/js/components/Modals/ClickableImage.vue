@@ -19,17 +19,17 @@ export default{
     data(){
         return{
             isToShowModal: false,
-            propSize: this.size,
+            // propSize: this.size,
         }
     },
     methods: {
         showModal(){
             this.isToShowModal = true;
-            this.propSize = '';
+            // this.propSize = '';
         },
         hideModal(){
             this.isToShowModal = false;
-            this.propSize = this.size;
+            // this.propSize = this.size;
         }
     },
     computed: {
