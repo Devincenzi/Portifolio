@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\Api\EmailController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -23,5 +24,7 @@ Route::post('users/delete/{id}', [UserController::class, 'delete']);
 Route::post('users/alter/{id}', [UserController::class, 'alter']);
 Route::post('users/resetPassword/{id}', [UserController::class, 'resetPassword']);
 Route::get('users/deleteall', [UserController::class, 'deleteall']);
+
+Route::post('sendemail', [EmailController::class, 'send']);
 
 Route::get('products', [\App\Http\Controllers\Api\ProductController::class, 'index']);
