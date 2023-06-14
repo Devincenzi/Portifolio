@@ -18575,7 +18575,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)(["transition-all duration-500 ease-linear group", [$options.classObject], $data.propSize])
   }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_1, [!$data.isToShowModal ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(_component_expand, {
     key: 0,
-    "class": "text-slate-100 cursor-pointer opacity-0 absolute top-2 right-2 transition-opacity ease-in group-hover:opacity-100 duration-200 z-50",
+    "class": "text-slate-100 cursor-pointer opacity-0 absolute top-2 right-2 transition-opacity ease-in group-hover:opacity-100 duration-200 z-40",
     onClick: $options.showModal
   }, null, 8 /* PROPS */, ["onClick"])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
     src: $props.imagepath,

@@ -1,8 +1,8 @@
 <template>
-    <div class="transition-all duration-500 ease-linear group " :class="[classObject], propSize">
+    <div class="transition-all duration-500 ease-linear group" :class="[classObject], propSize">
         <div class="relative">
             <expand v-if="!isToShowModal" class="text-slate-100 cursor-pointer opacity-0 absolute top-2 right-2 
-                transition-opacity ease-in group-hover:opacity-100 duration-200 z-50" @click="showModal"/>
+                transition-opacity ease-in group-hover:opacity-100 duration-200 z-40" @click="showModal"/>
 
             <img :src="imagepath" class="border border-slate-600 rounded-md" />
 

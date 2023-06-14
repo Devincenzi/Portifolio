@@ -14,7 +14,7 @@
             <x-highlight-text class='font-bold'><a href='github.com/Devincenzi/Portifolio'>github.com/Devincenzi</a></x-highlight-text>.
         </div>
     </div>
-    <div id='tecnologias' class='text-slate-50 min-h-screen w-full mb-5 md:mb-0 py-5 px-10 flex justify-around items-center'>
+    <div id='tecnologias' class='text-slate-100 min-h-screen w-full mb-5 md:mb-0 py-5 px-10 flex justify-around items-center'>
         <div class='px-5 md:px-0 md:w-3/5'>
             <span class='font-semibold text-2xl sm:text-4xl text-center block mb-16'>TECNOLOGIAS</span>
             <ul class="mb-2 list-inside list-bullet-gradient text-justify sm:text-lg">
