@@ -39,7 +39,7 @@
     <div id='design' class='h-screen w-full flex flex-col justify-around'>
         <span class='font-semibold text-2xl sm:text-4xl text-center block'>DESING</span>
         <div class='py-5 px-10 flex flex-col md:flex-row justify-around items-center'>
-            <clickable-image class='w-3/4 my-5 md:w-2/4 md:my-0 rounded-md' :imagepath='"{{"/images/projetos/template.png"}}"'></clickable-image>
+            <clickable-image :size='"{{"w-3/4 md:w-2/4"}}"' class='my-5 md:my-0 rounded-md' :imagepath='"{{"/images/projetos/template.png"}}"'></clickable-image>
             <span class='w-4/5 md:w-2/5 text-justify text-lg'>
                 Para este projeto utilizei como base o template 
                 <x-highlight-text class='font-bold text-xl'>

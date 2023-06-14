@@ -17654,7 +17654,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
               //executa o runGame() uma vez a cada 300ms
               //diminui o intervalo cada vez que uma comida é comida
               setTimeout(function () {
-                _this2.moveSnake();
+                _this2.runGame();
               }, _this2.speed);
             case 5:
             case "end":
@@ -17792,6 +17792,17 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
       setTimeout(function () {
         _this4.popup.show = false;
       }, 1500);
+    },
+    //
+    runGame: function runGame() {
+      var _this5 = this;
+      //A recursividade gera o mesmo efeito do setInterval,
+      //Com a diferença de que a cada vez que é executado,
+      //O timer é atualizado conforme a velocidade
+      this.moveSnake();
+      setTimeout(function () {
+        _this5.runGame();
+      }, this.speed);
     },
     // End the game
     endGame: function endGame() {
@@ -18115,7 +18126,7 @@ __webpack_require__.r(__webpack_exports__);
   methods: {
     showModal: function showModal() {
       this.isToShowModal = true;
-      this.propSize = '';
+      this.propSize = 'w-full';
     },
     hideModal: function hideModal() {
       this.isToShowModal = false;
@@ -18553,28 +18564,27 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
-var _hoisted_1 = ["src"];
+var _hoisted_1 = {
+  "class": "relative"
+};
+var _hoisted_2 = ["src"];
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_expand = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("expand");
   var _component_x_mark = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("x-mark");
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", {
     "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)(["transition-all duration-500 ease-linear group", [$options.classObject], $data.propSize])
-  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-    "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)(["relative", {
-      'w-3/4': $data.isToShowModal
-    }])
-  }, [!$data.isToShowModal ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(_component_expand, {
+  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_1, [!$data.isToShowModal ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(_component_expand, {
     key: 0,
     "class": "text-slate-100 cursor-pointer opacity-0 absolute top-2 right-2 transition-opacity ease-in group-hover:opacity-100 duration-200 z-50",
     onClick: $options.showModal
   }, null, 8 /* PROPS */, ["onClick"])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
     src: $props.imagepath,
     "class": "border border-slate-600 rounded-md"
-  }, null, 8 /* PROPS */, _hoisted_1), $data.isToShowModal ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(_component_x_mark, {
+  }, null, 8 /* PROPS */, _hoisted_2), $data.isToShowModal ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(_component_x_mark, {
     key: 1,
     "class": "absolute bg-gradient-to-r from-cyan-400 to-sky-500 -top-3 -right-3 rounded-full p-2",
     onClick: $options.hideModal
-  }, null, 8 /* PROPS */, ["onClick"])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)], 2 /* CLASS */)], 2 /* CLASS */);
+  }, null, 8 /* PROPS */, ["onClick"])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)])], 2 /* CLASS */);
 }
 
 /***/ }),

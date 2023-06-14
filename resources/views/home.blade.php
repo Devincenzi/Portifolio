@@ -8,11 +8,11 @@
 @section('content')
     <section class='px-3 mx-auto md:px-6 lg:px-8 max-w-7xl'>
         <div class="flex justify-around relative items-center w-full">
-            <div class="leading-8">
-                <div class='text-slate-100 font-bold text-3xl'>
+            <div>
+                <div class='text-slate-100 font-bold text-2xl sm:text-xl'>
                     Seja bem-vindo, eu sou <x-highlight-text>André</x-highlight-text>👋
                 </div>
-                <div class="text-slate-100 pt-5 font-medium">
+                <div class="text-slate-100 pt-2 text-sm font-medium sm:text-base sm:pt-5 !leading-4 sm:!leading-8">
                     Sou um desenvolvedor <x-highlight-text>web fullstack</x-highlight-text> com habilidades em diversas linguagens e frameworks, 
                     como <x-highlight-text>PHP,</x-highlight-text> <x-highlight-text>C#,</x-highlight-text> <x-highlight-text>JavaScript,</x-highlight-text> <x-highlight-text>Laravel,</x-highlight-text> <x-highlight-text>React</x-highlight-text> e <x-highlight-text>Vue</x-highlight-text>. 
                     Além disso, sou um grande fã de jogos e sempre busco incluir elementos lúdicos e divertidos 
@@ -30,7 +30,7 @@
                 </div> -->
             </div>
             <div class='flex justify-end'>
-                <img class='max-w-xs' src='/images/avatar.png'/>
+                <img class='max-w-[10rem] sm:max-w-xs' src='/images/avatar.png'/>
             </div>
         </div>
         <div>

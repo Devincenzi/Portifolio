@@ -80,7 +80,7 @@ export default {
             //executa o runGame() uma vez a cada 300ms
             //diminui o intervalo cada vez que uma comida é comida
             setTimeout(() => {
-                this.moveSnake();
+                this.runGame();
             }, this.speed);
         },
         // gera a grade do jogo
@@ -225,6 +225,16 @@ export default {
             this.popup.y = food.offsetTop;
             this.popup.show = true;
             setTimeout(() => { this.popup.show = false }, 1500);
+        },
+        //
+        runGame(){
+            //A recursividade gera o mesmo efeito do setInterval,
+            //Com a diferença de que a cada vez que é executado,
+            //O timer é atualizado conforme a velocidade
+            this.moveSnake();
+            setTimeout(() => {
+                this.runGame();
+            }, this.speed);
         },
         // End the game
         endGame() {
