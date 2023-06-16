@@ -36,12 +36,12 @@ return [
     'mailers' => [
         'smtp' => [
             'transport' => 'smtp',
-            'host' => env('MAIL_HOST', 'smtp.mailgun.org'),
+            'host' => env('MAIL_HOST', 'smtp.andre-devincenzi.com'),
             'port' => env('MAIL_PORT', 587),
             'encryption' => env('MAIL_ENCRYPTION', 'tls'),
             'username' => env('MAIL_USERNAME'),
             'password' => env('MAIL_PASSWORD'),
-            'timeout' => null,
+            'timeout' => 10000,
             'local_domain' => env('MAIL_EHLO_DOMAIN'),
         ],
 
@@ -92,8 +92,8 @@ return [
     */
 
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'default@example.com'),
-        'name' => env('MAIL_FROM_NAME', 'Default'),
+        'address' => env('MAIL_FROM_ADDRESS', 'financeiro@andre-devincenzi.com'),
+        'name' => env('MAIL_FROM_NAME', 'André Devincenzi'),
     ],
 
     /*
