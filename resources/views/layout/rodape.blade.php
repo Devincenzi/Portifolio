@@ -3,19 +3,19 @@
         <span class='font-bold text-2xl'>Entre em <x-highlight-text>Contato</x-highlight-text></span>
         <form action='/api/sendemail' method='POST' class='w-3/4 md:w-1/2 grid grid-cols-6'>
             @csrf
-            <div class='col-span-6 md:col-span-2 input-group'>
+            <div class='col-span-6 md:col-span-3 input-group'>
                 <label>Nome</label>
                 <input name='nome' value='' type='text' class='rounded-md' placeholder="José da Silva"/>
             </div>
 
-            <div class='col-span-6 md:col-span-2 input-group'>
-                <label>Email</label>
-                <input name='email' value='' type='email' class='rounded-md' placeholder="nome.sobrenome@gmail.com"/>
-            </div>
-
-            <div class='col-span-6 md:col-span-2 input-group'>
+            <div class='col-span-6 md:col-span-3 input-group'>
                 <label>Assunto</label>
                 <input name='assunto' value='' type='text' class='rounded-md' placeholder="Serviço"/>
+            </div>
+
+            <div class='col-span-6 input-group'>
+                <label>Email</label>
+                <input name='email' value='' type='email' class='rounded-md' placeholder="nome.sobrenome@gmail.com"/>
             </div>
             
             <div class='col-span-6 input-group'>
