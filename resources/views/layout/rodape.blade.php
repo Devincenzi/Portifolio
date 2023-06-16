@@ -22,6 +22,10 @@
                 <label>Mensagem</label>
                 <textarea name='mensagem' value='' rowspan='3' class='rounded-md' placeholder="Que site bacana, desejo conversar para fazer o meu! Pago muito bem!"></textarea>
             </div>
+
+            <div class='col-span-6 flex justify-end pr-3 pl-4'>
+                <button type="submit" class="text-center text-slate-200 w-full sm:w-auto bg-gradient-to-r from-sky-500 to-cyan-400 font-semibold text-sm sm:text-base p-2 rounded-md transition-colors ease-in duration-300 hover:from-sky-600 hover:to-cyan-500">ENVIAR</button>
+            </div>
         </form>
     </div>
     <div class='h-10 flex justify-center items-center text-sm text-slate-100'>© Copyright 2022 by Astro boilerplate.</div>
