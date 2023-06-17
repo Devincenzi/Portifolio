@@ -26,5 +26,3 @@ Route::post('users/resetPassword/{id}', [UserController::class, 'resetPassword']
 Route::get('users/deleteall', [UserController::class, 'deleteall']);
 
 Route::post('sendemail', [EmailController::class, 'send']);
-
-Route::get('products', [\App\Http\Controllers\Api\ProductController::class, 'index']);
