@@ -9,13 +9,13 @@
     .container{
         width: 100%;
         background-color: #0f172a;
-        display: flex;
-        justify-content: center;
         border: 1px #475569 solid;
     }
 
     .titulo{
         color: #f1f5f9;
+        width: 100%;
+        text-align: center;
         border: 1px #475569 solid;
     }
 
