@@ -31,8 +31,8 @@ class FormularioContato extends Mailable
      */
     public function envelope() : Envelope{
         return new Envelope(
-            from: new Address($this->email, 'Example Jow'),
-            subject: $this->assunto || 'Formulário Contato',
+            from: new Address($this->email, $this->nome),
+            subject: $this->assunto,
         );
     }
 
