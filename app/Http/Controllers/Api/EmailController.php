@@ -17,7 +17,8 @@ class EmailController extends Controller
         $assunto = $request->assunto;
         $mensagem = $request->mensagem;
 
-        Mail::to($email)->send(new FormularioContato($nome, $assunto, $mensagem));
+        Mail::to(env('MAIL_FROM_ADDRESS', 'contato@andre-devincenzi.com'))
+            ->send(new FormularioContato($nome, $assunto, $email, $mensagem));
 
         return redirect('/');
     }

@@ -19,7 +19,8 @@ class FormularioContato extends Mailable
      *
      * @return void
      */
-    public function __construct(protected string $nome, protected string $assunto, protected string $mensagem){
+    public function __construct(protected string $nome, protected string $assunto, 
+                                protected string $email, protected string $mensagem){
         
     }
 
@@ -30,7 +31,7 @@ class FormularioContato extends Mailable
      */
     public function envelope() : Envelope{
         return new Envelope(
-            from: new Address('example@example.com', 'Example Jow'),
+            from: new Address($this->email, 'Example Jow'),
             subject: $this->assunto || 'Formulário Contato',
         );
     }
