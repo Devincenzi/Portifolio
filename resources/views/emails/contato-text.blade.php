@@ -1,1 +1,3 @@
-LASLASLDSLALDAS TEXTO
+{{ $nomeContato }} enviou uma mensagem!
+
+{{ $mensagem }}

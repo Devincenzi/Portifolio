@@ -1,5 +1,5 @@
 <div class='container'>
-    <h2 class='titulo'>{{ $nomeContato }} enviou uma mensagem!</h2>
+    <h1 class='titulo'>{{ $nomeContato }} enviou uma mensagem!</h1>
     <p class='mensagem'>
         {{ $mensagem }}
     </p>
