@@ -31,6 +31,7 @@ import DropdownLink from './components/Layout/DropdownLink.vue';
 import Separator from './components/Layout/Separator.vue';
 import Carousel from './components/Layout/Carousel.vue';
 import LazyComponent from 'v-lazy-component';
+import NavBar from './components/Layout/NavBar.vue'
 
 import campoCobra from './cobra/campoCobra.vue';
 
@@ -49,6 +50,7 @@ app.component('dropdown-link', DropdownLink);
 app.component('separator', Separator);
 app.component('carousel', Carousel);
 app.component('lazy-component', LazyComponent);
+app.component('nav-bar', NavBar);
 
 app.component('campo-cobra', campoCobra);
 
