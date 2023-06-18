@@ -18031,7 +18031,7 @@ __webpack_require__.r(__webpack_exports__);
         "w-full bg-stone-900 bg-opacity-70 absolute bottom-0 left-0 px-5 py-3 text-center": this.orientation == 'overlay',
         "h-full border border-slate-600 bg-stone-900 absolute right-0 w-1/3 flex flex-col justify-center items-center": this.orientation == 'direita',
         "h-full border border-slate-600 bg-stone-900 absolute left-0 w-1/3 flex flex-col justify-center items-center": this.orientation == 'esquerda',
-        "w-full border border-slate-600 bg-stone-900 absolute -bottom-20 p-2 h-36 sm:h-28 text-justify whitespace-normal": this.orientation == 'abaixo'
+        "w-full border border-slate-600 bg-stone-900 absolute -bottom-36 sm:-bottom-20 p-2 h-40 sm:h-28 text-justify whitespace-normal": this.orientation == 'abaixo'
       };
     },
     classOrientationImage: function classOrientationImage() {
