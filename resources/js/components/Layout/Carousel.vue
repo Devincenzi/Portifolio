@@ -1,6 +1,6 @@
 <template>
     <div :class="[classObject]">
-        <div class="relative group/parent"  :class="{'w-4/5': isToShowModal}">
+        <div class="relative group/parent"  :class="{'w-full sm:w-4/5': isToShowModal}">
             <expand v-if="!isToShowModal" class="text-slate-100 cursor-pointer opacity-0 absolute top-2 right-2 
                     transition-opacity ease-in group-hover/parent:opacity-100 duration-200 z-30" @click="showModal"/>
 
@@ -181,7 +181,7 @@ export default{
                 "w-full bg-stone-900 bg-opacity-70 absolute bottom-0 left-0 px-5 py-3 text-center": this.orientation == 'overlay',
                 "h-full border border-slate-600 bg-stone-900 absolute right-0 w-1/3 flex flex-col justify-center items-center": this.orientation == 'direita',
                 "h-full border border-slate-600 bg-stone-900 absolute left-0 w-1/3 flex flex-col justify-center items-center": this.orientation == 'esquerda',
-                "w-full border border-slate-600 bg-stone-900 absolute -bottom-20 p-2 h-28 text-justify whitespace-normal": this.orientation == 'abaixo'
+                "w-full border border-slate-600 bg-stone-900 absolute -bottom-20 p-2 h-36 sm:h-28 text-justify whitespace-normal": this.orientation == 'abaixo'
             }
         },
         classOrientationImage(){

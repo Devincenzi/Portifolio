@@ -13,13 +13,13 @@
             O código completo pode ser explorado em <x-highlight-text class='font-bold'><a href='https://github.com/Devincenzi/Portifolio/blob/main/resources/js/cobra/campoCobra.vue'>github.com/Devincenzi</a></x-highlight-text>
         </div>
     </div>
-    <div class="text-slate-100 h-screen w-full flex flex-col justify-around">
+    <div class="text-slate-100 min-h-screen w-full flex flex-col justify-around">
         <span class='font-semibold text-2xl sm:text-4xl text-center block'>PARAMETROS</span>
-        <div class='py-5 px-10 flex flex-col md:flex-row justify-around items-center'>
+        <div class='py-5 px-2 sm:px-10 flex flex-col sm:flex-row justify-around items-center'>
 
-            <clickable-image :size='"{{ "w-3/5" }}"' :imagepath='"{{ "/images/projetos/cobra/variaveis.png" }}"'></clickable-image>
+            <clickable-image :size='"{{ "w-full sm:w-3/5" }}"' :imagepath='"{{ "/images/projetos/cobra/variaveis.png" }}"'></clickable-image>
 
-            <div class='w-2/3 px-4 font-semibold'>
+            <div class='w-full sm:w-2/3 px-4 font-semibold'>
                 <ul class='mb-1 list-inside list-bullet-gradient text-justify'>Primeiro definimos os parametros do nosso jogo
                     <li>Os números de linhas e colunas <span class='text-sm font-thin'>(numRows, numCols)</span>, que depois vão ser multiplicados pelas dimensões de cada célula do campo <span class='text-sm font-thin'>(32px)</span> para definir o tamanho da div de inicio e fim de jogo</li>
                     <li>A matriz que vai guardar as informações lógicas do campo <span class='text-sm font-thin'>(grid)</span></li>
@@ -36,10 +36,10 @@
     
     <x-divider/>
 
-    <div class="text-slate-100 h-screen w-full flex flex-col justify-around">
+    <div class="text-slate-100 min-h-screen w-full flex flex-col justify-around">
         <span class='font-semibold text-2xl sm:text-4xl text-center block'>ESTRUTURA</span>
-        <div class='py-5 px-10 flex flex-col md:flex-row justify-around items-center'>
-            <div class='w-2/3 px-4'>
+        <div class='py-5 px-2 sm:px-10 flex flex-col md:flex-row justify-around items-center'>
+            <div class='w-full sm:w-2/3 px-4'>
                 <ul class='list-inside font-medium list-bullet-gradient mb-1 text-justify'><span class="font-semibold">Em seguida podemos montar a estrutura HTML e CSS</span>
                     <li>Aplicamos na div que contém o campo, as propriedades css para definir o alinhamento e a disposição de cada célula <span class='text-sm font-thin'>(imgs com a classe "cell", linha 14/15)</span></li>
                     <li>Em seguida a div que contém o botão de iniciar e as informações de fim de jogo, que sobrepõe o campo, condicionado às variáveis que vimos antes <span class='text-sm font-thin'>(isPlaying, gameOver)</span></li>
@@ -51,7 +51,7 @@
                     <li>E finalmente o efeito que é disparado quando uma maçã é comida, condicionado a variável que vimos anteriormente <span class='text-sm font-thin'>(popup, linha 44)</span></li>
                 </ul>
             </div>
-            <clickable-image :size='"{{ "w-2/5" }}"' :imagepath='"{{ "/images/projetos/cobra/template.png" }}"'></clickable-image>
+            <clickable-image :size='"{{ "w-full sm:w-2/5" }}"' :imagepath='"{{ "/images/projetos/cobra/template.png" }}"'></clickable-image>
         </div>
     </div>
 
@@ -60,7 +60,7 @@
     <lazy-component :wrapper-tag="section" :treshold='0.25'>
         <section class="text-slate-100 min-h-screen w-full flex flex-col items-center justify-around">
             <span class="font-semibold text-2xl sm:text-4xl text-center block">MÉTODOS</span>
-            <carousel class="w-3/5 max-h-96" :imagesandtexts="{{json_encode([
+            <carousel class="w-full sm:w-3/5 px-2 sm:px-0 sm:max-h-96" :imagesandtexts="{{json_encode([
                 ['index'=>'0','imagepath'=>'/images/projetos/cobra/mounted.png', 'text'=>'Primeiro geramos nosso grid. Logo depois impedimos que a tela seja rolada caso o usuário esteja jogando.'],
                 ['index'=>'1','imagepath'=>'/images/projetos/cobra/start_game.png', 'text'=>'Este método se trata apenas de definir os valores de volta ao padrão caso não seja a primeira run, colocar a maçã e cobra no grid, e dar movimento.'],
                 ['index'=>'2','imagepath'=>'/images/projetos/cobra/generate_grid.png', 'text'=>'Para gerar o grid, vamos criar um loop sobre a variável numRows, e dentro dele outro loop para numCols, cada iteração do loop aninhado vai criar nossa célula do grid e adicioná-la ao array row. A cada iteração do loop externo o array é adicionado ao grid, que se torna uma matriz bidimensional.'],
