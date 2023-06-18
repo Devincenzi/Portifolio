@@ -40,10 +40,10 @@
 
             <a href='/projetos/portifolio'>
                 <div class='flex w-full hover:cursor-pointer my-5 py-6 bg-slate-800 hover:ring-4 hover:-translate-y-2 ring-sky-500 rounded-xl transition-all duration-150 ease-in'>
-                    <div class='w-1/6 ml-5'>
+                    <div class='w-1/6 ml-3 sm:ml-5'>
                         <img src='/images/avatar.png'/>
                     </div>
-                    <div class='w-3/5 ml-2'>
+                    <div class='w-3/5 ml-1 sm:ml-2'>
                         <div class='flex'>
                             <div class='text-slate-100 font-semibold mr-2 text-xl'>Portifolio</div>
                             <div class='bg-gradient-to-r from-rose-400 to-red-400 text-slate-800 rounded-lg text-sm mx-1 font-semibold px-1 flex justify-center items-center'>Laravel</div>
