@@ -39,8 +39,8 @@
             </div>
 
             <a href='/projetos/portifolio'>
-                <div class='flex w-full hover:cursor-pointer my-5 py-6 bg-slate-800 hover:ring-4 hover:-translate-y-2 ring-sky-500 rounded-xl transition-all duration-150 ease-in'>
-                    <div class='w-1/6 ml-3 sm:ml-5'>
+                <div class='flex w-full hover:cursor-pointer my-5 py-3 sm:py-6 bg-slate-800 hover:ring-4 hover:-translate-y-2 ring-sky-500 rounded-xl transition-all duration-150 ease-in'>
+                    <div class='flex items-center w-1/6 ml-3 sm:ml-5'>
                         <img src='/images/avatar.png'/>
                     </div>
                     <div class='w-3/5 ml-1 sm:ml-2'>
@@ -59,8 +59,8 @@
             </a>
 
             <a href='/projetos/cobra'>
-                <div class='flex w-full hover:cursor-pointer py-6 my-5 bg-slate-800 hover:ring-4 hover:-translate-y-2 ring-sky-500 rounded-xl transition-all duration-150 ease-in'>
-                    <div class='w-1/6 ml-5'>
+                <div class='flex w-full hover:cursor-pointer py-3 sm:py-6 my-5 bg-slate-800 hover:ring-4 hover:-translate-y-2 ring-sky-500 rounded-xl transition-all duration-150 ease-in'>
+                    <div class='flex items-center w-1/6 ml-5'>
                         <img src='/images/snakeLogo.png'/>
                     </div>
                     <div class='w-3/5 ml-2'>

@@ -2387,6 +2387,11 @@ select{
     padding-right: 1.5rem;
   }
 
+  .sm\:py-6 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
   .sm\:pt-5 {
     padding-top: 1.25rem;
   }
