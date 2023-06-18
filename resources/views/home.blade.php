@@ -39,7 +39,7 @@
             </div>
 
             <a href='/projetos/portifolio'>
-                <div class='flex w-full hover:cursor-pointer my-5 py-3 sm:py-6 bg-slate-800 hover:ring-4 hover:-translate-y-2 ring-sky-500 rounded-xl transition-all duration-150 ease-in'>
+                <div class='flex w-full hover:cursor-pointer my-5 py-4 sm:py-6 bg-slate-800 hover:ring-4 hover:-translate-y-2 ring-sky-500 rounded-xl transition-all duration-150 ease-in'>
                     <div class='flex items-center w-1/6 ml-3 sm:ml-5'>
                         <img src='/images/avatar.png'/>
                     </div>
@@ -50,7 +50,7 @@
                             <div class='bg-gradient-to-r from-emerald-400 to-green-400 text-slate-800 rounded-lg text-sm mx-1 font-semibold px-1 flex justify-center items-center'>Vue</div>
                             <div class='bg-gradient-to-r from-sky-400 to-cyan-400 text-slate-800 rounded-lg text-sm mx-1 font-semibold px-1 flex justify-center items-center'>Tailwindcss</div>
                         </div>
-                        <div class='text-slate-400 my-4 text-lg'>
+                        <div class='text-slate-400 my-1 sm:ml-4 text-lg'>
                             Este é meu portifolio onde vou colocar meus contatos, projetos, 
                             e comentar um pouco sobre eles.
                         </div>
@@ -59,7 +59,7 @@
             </a>
 
             <a href='/projetos/cobra'>
-                <div class='flex w-full hover:cursor-pointer py-3 sm:py-6 my-5 bg-slate-800 hover:ring-4 hover:-translate-y-2 ring-sky-500 rounded-xl transition-all duration-150 ease-in'>
+                <div class='flex w-full hover:cursor-pointer py-4 sm:py-6 my-5 bg-slate-800 hover:ring-4 hover:-translate-y-2 ring-sky-500 rounded-xl transition-all duration-150 ease-in'>
                     <div class='flex items-center w-1/6 ml-5'>
                         <img src='/images/snakeLogo.png'/>
                     </div>
@@ -68,7 +68,7 @@
                             <div class='text-slate-100 font-semibold mr-2 text-xl'>Cobra</div>
                             <div class='bg-gradient-to-r from-emerald-400 to-green-400 text-slate-800 rounded-lg text-sm mx-1 font-semibold px-1 flex justify-center items-center'>Vue</div>
                         </div>
-                        <div class='text-slate-400 my-4 text-lg'>
+                        <div class='text-slate-400 my-1 sm:my-4 text-lg'>
                             Uma reprodução do clássico jogo da cobra, construído em Vue.
                         </div>
                     </div>
