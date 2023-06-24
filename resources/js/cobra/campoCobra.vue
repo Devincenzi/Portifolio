@@ -37,7 +37,7 @@
         class="text-slate-100 font-bold absolute slide-top">+1
     </div>
 
-    <div class="fixed right-10 bottom-6 grid grid-cols-3 sm:hidden">
+    <div class="fixed right-6 bottom-10 grid grid-cols-3 sm:hidden">
         <img @touchstart="handleKeyDown('ArrowUp', true)" src="/images/snake/UI/arrow-up.png" class="w-12 col-span-1 col-start-2 cursor-pointer"/>
         <img @touchstart="handleKeyDown('ArrowLeft', true)" src="/images/snake/UI/arrow-left.png" class="w-12 col-span-1 col-start-1 cursor-pointer"/>
         <img @touchstart="handleKeyDown('ArrowDown', true)" src="/images/snake/UI/arrow-down.png" class="w-12 col-span-1 cursor-pointer"/>

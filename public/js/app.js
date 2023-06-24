@@ -18229,7 +18229,7 @@ var _hoisted_9 = {
   "class": "text-slate-100 font-bold"
 };
 var _hoisted_10 = {
-  "class": "fixed right-10 bottom-6 grid grid-cols-3 sm:hidden"
+  "class": "fixed right-6 bottom-10 grid grid-cols-3 sm:hidden"
 };
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_1, [!$data.isPlaying || $data.gameOver ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", {
