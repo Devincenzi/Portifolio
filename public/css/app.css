@@ -946,6 +946,9 @@ select {
 .mt-20 {
   margin-top: 5rem;
 }
+.mr-1 {
+  margin-right: 0.25rem;
+}
 .block {
   display: block;
 }

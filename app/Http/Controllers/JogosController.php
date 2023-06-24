@@ -19,4 +19,12 @@ class JogosController extends Controller
     public function ganso(){
         return view('pages.jogos.tap-ganso');
     }
+
+    public function milhoGrande(){
+        return view('pages.jogos.milho-grande');
+    }
+
+    public function batalhaNaval(){
+        return view('pages.jogos.batalha-naval');
+    }
 }

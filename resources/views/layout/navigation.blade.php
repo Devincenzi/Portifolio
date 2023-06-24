@@ -17,6 +17,10 @@
             {{ __('Jogos') }}
         </x-nav-link>
 
+        <x-nav-link :href="route('creditos')" :active="request()->routeIs('creditos')">
+            Créditos
+        </x-nav-link>
+
         <!-- <x-nav-link href="https://www.github.com/Devincenzi" target="_blank">
             GitHub
         </x-nav-link> -->

@@ -26,4 +26,8 @@ class HomeController extends Controller
     public function cobra(){
         return view('pages.projetos.cobra');
     }
+
+    public function creditos(){
+        return view('pages.creditos');
+    }
 }

@@ -18,8 +18,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [HomeController::class, 'index'])
-    ->name('home');
+Route::get('/', [HomeController::class, 'index'])->name('home');
+
+Route::get('/creditos', [HomeController::class, 'creditos'])->name('creditos');
 
 Route::get('/welcome', [HomeController::class, 'welcome']);
 
@@ -27,6 +28,8 @@ Route::get('/jogos', [JogosController::class, 'index'])->name('jogos');
 
 Route::get('/jogos/cobra', [JogosController::class, 'cobra']);
 Route::get('/jogos/tap-ganso', [JogosController::class, 'ganso']);
+Route::get('/jogos/milho-grande', [JogosController::class, 'milhoGrande']);
+Route::get('/jogos/batalha-naval', [JogosController::class, 'batalhaNaval']);
 
 Route::get('/projetos/portifolio', [HomeController::class, 'portifolio']);
 Route::get('/projetos/cobra', [HomeController::class, 'cobra']);
