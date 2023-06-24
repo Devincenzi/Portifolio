@@ -18032,7 +18032,7 @@ __webpack_require__.r(__webpack_exports__);
   computed: {
     classObject: function classObject() {
       return {
-        'backdrop-blur-md bg-slate-800 bg-opacity-60 top-0 left-0 !fixed z-30 !max-h-screen h-full !w-full flex justify-center pt-16 sm:pt-10': this.isToShowModal
+        'backdrop-blur-md bg-slate-800 bg-opacity-60 top-0 left-0 !fixed z-30 !max-h-screen h-full !w-full flex justify-center items-center sm:items-start sm:pt-10': this.isToShowModal
       };
     },
     classOrientationText: function classOrientationText() {
