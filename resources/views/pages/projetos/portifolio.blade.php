@@ -1,7 +1,7 @@
 @extends('layout.app')
 
 @section('content')
-    <div class="h-screen px-5 md:px-0 md:h-fit w-full text-center">
+    <div class="px-5 md:px-0 h-fit w-full text-center">
         <x-highlight-text class="font-bold text-4xl sm:text-6xl my-3">PORTFÓLIO</x-highlight-text>
         <div class='font-semibold my-8 text-lg text-justify'>
             Este é meu portfólio onde vou colocar meus contatos, projetos, e comentar um pouco sobre eles. 

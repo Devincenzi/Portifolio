@@ -17,9 +17,9 @@
             {{ __('Jogos') }}
         </x-nav-link>
 
-        <x-nav-link href="https://www.github.com/Devincenzi" target="_blank">
+        <!-- <x-nav-link href="https://www.github.com/Devincenzi" target="_blank">
             GitHub
-        </x-nav-link>
+        </x-nav-link> -->
     </template>
     <!-- Responsive Navigation Menu -->
     <template #responsivelinks>

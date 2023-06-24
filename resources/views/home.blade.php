@@ -20,14 +20,11 @@
                     Aqui você encontrará mais informações sobre mim, meu trabalho e projetos em que estou envolvido.
                     Sinta-se à vontade para explorar e entrar em contato para conversarmos sobre possíveis projetos juntos!
                 </div>
-                <!-- <div class="text-slate-100 pt-5 font-medium">
-                    Sou um desenvolvedor <x-highlight-text>web fullstack</x-highlight-text> com habilidades em 
-                    <x-highlight-text>PHP,</x-highlight-text> <x-highlight-text>JS,</x-highlight-text> 
-                    <x-highlight-text>MySQL,</x-highlight-text> <x-highlight-text>Laravel,</x-highlight-text> 
-                    <x-highlight-text>React</x-highlight-text> e <x-highlight-text>Vue,</x-highlight-text> e apaixonado por jogos. 
-                    Em minha página pessoal, você encontrará exemplos do meu trabalho em projetos web e jogos. 
-                    <x-highlight-text>Entre em contato</x-highlight-text> para discutir oportunidades de colaboração
-                </div> -->
+                <div class='mt-10 flex'>
+                    <a href='wa.me/5553999106606' title="Entre em contato pelo whatsapp!" class='mr-2 transition-transform hover:scale-125 hover:-translate-y-1 duration-200'><img class='w-8 sm:w-10' src='/images/whatsapp.png'/></a>
+                    <a href='github.com/Devincenzi' title="Meu Github" class='bg-gradient-to-br from-stone-200 to-stone-300 rounded-xl mx-2 transition-transform hover:scale-125 hover:-translate-y-1 duration-200'><img class='w-8 sm:w-10' src='/images/github.png'/></a>
+                    <a href='linkedin.com/in/andré-devincenzi-14b68b163/' title='Meu Linkedin' class="mx-2 transition-transform hover:scale-125 hover:-translate-y-1 duration-200"><img src='/images/linkedin.png' class='w-8 sm:w-10'/></a>
+                </div>
             </div>
             <div class='flex justify-end'>
                 <img class='max-w-[10rem] sm:max-w-xs' src='/images/avatar.png'/>

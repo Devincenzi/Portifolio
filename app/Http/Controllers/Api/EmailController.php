@@ -20,7 +20,7 @@ class EmailController extends Controller
         Mail::to(env('MAIL_FROM_ADDRESS', 'contato@andre-devincenzi.com'))
             ->send(new FormularioContato($nome, $assunto, $email, $mensagem));
 
-        $retorno = 'sucesso gurizada!';
+        $retorno = 'Sucesso gurizada!';
 
         return redirect('/')->with('flashMessage', $retorno);
     }

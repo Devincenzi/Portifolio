@@ -25,4 +25,4 @@ Route::post('users/alter/{id}', [UserController::class, 'alter']);
 Route::post('users/resetPassword/{id}', [UserController::class, 'resetPassword']);
 Route::get('users/deleteall', [UserController::class, 'deleteall']);
 
-Route::post('sendemail', [EmailController::class, 'send']);
+Route::post('send_email', [EmailController::class, 'send']);

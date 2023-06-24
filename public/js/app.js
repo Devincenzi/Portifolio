@@ -17847,10 +17847,15 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
       return JSON.parse(JSON.stringify(toConvert));
     },
     handleKeyDown: function handleKeyDown(event) {
+      var isMobile = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
+      console.log(event);
+
       //permite trocar a direção apenas uma vez por movimento
       if (this.hasMoved) return;
       this.hasMoved = true;
-      switch (event.key) {
+      key = '';
+      if (isMobile) key = event;else key = event.key;
+      switch (key) {
         case "ArrowUp":
           if (this.direction !== "Down") {
             this.oldDirection = this.direction;
@@ -18157,7 +18162,7 @@ __webpack_require__.r(__webpack_exports__);
   computed: {
     classObject: function classObject() {
       return {
-        'backdrop-blur-xl bg-slate-800 bg-opacity-80 top-0 left-0 !fixed z-50 h-full w-full flex justify-center items-center': this.isToShowModal
+        'backdrop-blur-md bg-slate-800 bg-opacity-50 top-0 left-0 !fixed z-50 h-full w-full flex justify-center items-center': this.isToShowModal
       };
     }
   }
@@ -18201,22 +18206,26 @@ var _withScopeId = function _withScopeId(n) {
 var _hoisted_1 = {
   "class": "flex justify-center items-center"
 };
-var _hoisted_2 = {
+var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<span class=\"hidden sm:block text-lg text-slate-200 text-center my-10\" data-v-351f66df> UTILIZE AS TECLAS <span class=\"flex justify-center my-5\" data-v-351f66df><img src=\"/images/snake/UI/wasd.png\" class=\"w-14 mx-2\" data-v-351f66df> OU <img src=\"/images/snake/UI/arrows.png\" class=\"w-14 mx-2\" data-v-351f66df></span> PARA CONTROLAR A COBRA! </span><span class=\"sm:hidden text-lg text-slate-200 w-1/2 break-normal font-bold text-center my-10\" data-v-351f66df> TOQUE NOS ÍCONES DE TECLAS PARA MOVER A COBRA À DIREÇÃO CORRESPONDENTE! </span>", 2);
+var _hoisted_4 = {
   key: 0
 };
-var _hoisted_3 = {
+var _hoisted_5 = {
   "class": "text-slate-100 font-bold py-2"
 };
-var _hoisted_4 = {
+var _hoisted_6 = {
   "class": "flex flex-col justify-center items-center mt-5"
 };
-var _hoisted_5 = {
+var _hoisted_7 = {
   "class": "flex border-8 rounded-lg border-emerald-800"
 };
-var _hoisted_6 = ["src"];
-var _hoisted_7 = {
+var _hoisted_8 = ["src"];
+var _hoisted_9 = {
   key: 0,
   "class": "text-slate-100 font-bold"
+};
+var _hoisted_10 = {
+  "class": "fixed right-6 bottom-6 grid grid-cols-3 sm:hidden"
 };
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_1, [!$data.isPlaying || $data.gameOver ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", {
@@ -18225,13 +18234,13 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       'width': $options.fieldWidth,
       'height': $options.fieldHeight
     }),
-    "class": "startGame flex flex-col justify-center items-center absolute"
-  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+    "class": "startGame flex flex-col items-center absolute"
+  }, [_hoisted_2, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
     onClick: _cache[0] || (_cache[0] = function ($event) {
       return $options.startGame();
     }),
     "class": "p-5 bg-sky-500 text-slate-100 rounded-md font-semibold"
-  }, "Start Game"), $data.gameOver ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_3, "PONTUAÇÃO: " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.score), 1 /* TEXT */)])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)], 4 /* STYLE */)) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_5, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($data.grid, function (row) {
+  }, "INICIAR JOGO"), $data.gameOver ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_5, "PONTUAÇÃO: " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.score), 1 /* TEXT */)])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)], 4 /* STYLE */)) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_7, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($data.grid, function (row) {
     return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", {
       key: row.id
     }, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)(row, function (col) {
@@ -18241,16 +18250,40 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
         src: col.image,
         ref_for: true,
         ref: "cell-".concat(col.row, "-").concat(col.col)
-      }, null, 8 /* PROPS */, _hoisted_6);
+      }, null, 8 /* PROPS */, _hoisted_8);
     }), 128 /* KEYED_FRAGMENT */))]);
-  }), 128 /* KEYED_FRAGMENT */))]), !$data.gameOver ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_7, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.score), 1 /* TEXT */)) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)])]), $data.popup.show ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", {
+  }), 128 /* KEYED_FRAGMENT */))]), !$data.gameOver ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_9, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.score), 1 /* TEXT */)) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)])]), $data.popup.show ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", {
     key: 0,
     style: (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeStyle)({
       left: "".concat($data.popup.x, "px"),
       top: "".concat($data.popup.y, "px")
     }),
     "class": "text-slate-100 font-bold absolute slide-top"
-  }, "+1 ", 4 /* STYLE */)) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)], 64 /* STABLE_FRAGMENT */);
+  }, "+1 ", 4 /* STYLE */)) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_10, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
+    onTouchstart: _cache[1] || (_cache[1] = function ($event) {
+      return $options.handleKeyDown('ArrowUp', true);
+    }),
+    src: "/images/snake/UI/arrow-up.png",
+    "class": "w-12 col-span-1 col-start-2 cursor-pointer"
+  }, null, 32 /* HYDRATE_EVENTS */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
+    onTouchstart: _cache[2] || (_cache[2] = function ($event) {
+      return $options.handleKeyDown('ArrowLeft', true);
+    }),
+    src: "/images/snake/UI/arrow-left.png",
+    "class": "w-12 col-span-1 col-start-1 cursor-pointer"
+  }, null, 32 /* HYDRATE_EVENTS */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
+    onTouchstart: _cache[3] || (_cache[3] = function ($event) {
+      return $options.handleKeyDown('ArrowDown', true);
+    }),
+    src: "/images/snake/UI/arrow-down.png",
+    "class": "w-12 col-span-1 cursor-pointer"
+  }, null, 32 /* HYDRATE_EVENTS */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
+    onTouchstart: _cache[4] || (_cache[4] = function ($event) {
+      return $options.handleKeyDown('ArrowRight', true);
+    }),
+    src: "/images/snake/UI/arrow-right.png",
+    "class": "w-12 col-span-1 cursor-pointer"
+  }, null, 32 /* HYDRATE_EVENTS */)])], 64 /* STABLE_FRAGMENT */);
 }
 
 /***/ }),
@@ -18674,10 +18707,10 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     onClick: $options.showModal
   }, null, 8 /* PROPS */, ["onClick"])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
     src: $props.imagepath,
-    "class": "border border-slate-600 rounded-md"
+    "class": "border border-slate-600 rounded-md bg-slate-800 bg-opacity-40"
   }, null, 8 /* PROPS */, _hoisted_2), $data.isToShowModal ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(_component_x_mark, {
     key: 1,
-    "class": "absolute bg-gradient-to-r from-cyan-400 to-sky-500 -top-3 -right-3 rounded-full p-2",
+    "class": "absolute -bottom-14 right-[45%] bg-gradient-to-r from-cyan-400 to-sky-500 sm:bottom-auto sm:-top-3 sm:-right-3 rounded-full p-3 sm:p-2",
     onClick: $options.hideModal
   }, null, 8 /* PROPS */, ["onClick"])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)])], 2 /* CLASS */);
 }

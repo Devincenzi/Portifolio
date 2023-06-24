@@ -1,8 +1,22 @@
 <template>
     <div class="flex justify-center items-center">
         <div v-if="!isPlaying || gameOver" :style="{'width': fieldWidth, 'height': fieldHeight}" 
-            class="startGame flex flex-col justify-center items-center absolute">
-            <button @click="startGame()" class="p-5 bg-sky-500 text-slate-100 rounded-md font-semibold">Start Game</button>
+            class="startGame flex flex-col items-center absolute">
+            <span class="hidden sm:block text-lg text-slate-200 text-center my-10">
+                UTILIZE AS TECLAS 
+                <span class="flex justify-center my-5">
+                    <img src="/images/snake/UI/wasd.png" class="w-14 mx-2"/> 
+                    OU
+                    <img src="/images/snake/UI/arrows.png" class="w-14 mx-2"/>
+                </span>
+                PARA CONTROLAR A COBRA!
+            </span>
+
+            <span class="sm:hidden text-lg text-slate-200 w-1/2 break-normal font-bold text-center my-10">
+                TOQUE NOS ÍCONES DE TECLAS PARA MOVER A COBRA À DIREÇÃO CORRESPONDENTE!
+            </span>
+
+            <button @click="startGame()" class="p-5 bg-sky-500 text-slate-100 rounded-md font-semibold">INICIAR JOGO</button>
             <div v-if="gameOver">
                 <div class="text-slate-100 font-bold py-2">PONTUAÇÃO: {{score}}</div>
             </div>
@@ -21,6 +35,13 @@
     </div>
     <div v-if="popup.show" :style="{ left: `${popup.x}px`, top: `${popup.y}px` }" 
         class="text-slate-100 font-bold absolute slide-top">+1
+    </div>
+
+    <div class="fixed right-6 bottom-6 grid grid-cols-3 sm:hidden">
+        <img @touchstart="handleKeyDown('ArrowUp', true)" src="/images/snake/UI/arrow-up.png" class="w-12 col-span-1 col-start-2 cursor-pointer"/>
+        <img @touchstart="handleKeyDown('ArrowLeft', true)" src="/images/snake/UI/arrow-left.png" class="w-12 col-span-1 col-start-1 cursor-pointer"/>
+        <img @touchstart="handleKeyDown('ArrowDown', true)" src="/images/snake/UI/arrow-down.png" class="w-12 col-span-1 cursor-pointer"/>
+        <img @touchstart="handleKeyDown('ArrowRight', true)" src="/images/snake/UI/arrow-right.png" class="w-12 col-span-1 cursor-pointer"/>
     </div>
 </template>
   
@@ -273,13 +294,22 @@ export default {
         proxyToJSON(toConvert){
             return JSON.parse(JSON.stringify(toConvert));
         },
-        handleKeyDown(event){
+        handleKeyDown(event, isMobile = false){
+            console.log(event);
+
             //permite trocar a direção apenas uma vez por movimento
             if(this.hasMoved) return;
             
             this.hasMoved = true;
 
-            switch (event.key) {
+            key = '';
+
+            if(isMobile)
+                key = event;
+            else
+                key = event.key;
+
+            switch (key) {
                 case "ArrowUp":
                     if (this.direction !== "Down") {
                         this.oldDirection = this.direction;
