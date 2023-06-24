@@ -790,6 +790,9 @@ select {
 .bottom-14 {
   bottom: 3.5rem;
 }
+.bottom-12 {
+  bottom: 3rem;
+}
 .z-50 {
   z-index: 50;
 }
@@ -1575,6 +1578,12 @@ select {
 }
 .pb-2 {
   padding-bottom: 0.5rem;
+}
+.pt-10 {
+  padding-top: 2.5rem;
+}
+.pt-16 {
+  padding-top: 4rem;
 }
 .text-center {
   text-align: center;
@@ -2515,6 +2524,10 @@ select{
 
   .sm\:pt-0 {
     padding-top: 0px;
+  }
+
+  .sm\:pt-10 {
+    padding-top: 2.5rem;
   }
 
   .sm\:text-xl {
