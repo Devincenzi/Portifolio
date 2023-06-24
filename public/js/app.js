@@ -18518,7 +18518,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     onClick: $options.nextItem
   }, null, 8 /* PROPS */, ["onClick"])]), $data.isToShowModal ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(_component_x_mark, {
     key: 1,
-    "class": "absolute bottom-12 right-[45%] bg-gradient-to-r from-cyan-400 to-sky-500 sm:bottom-auto sm:-top-3 sm:-right-3 rounded-full p-3 sm:p-2",
+    "class": "absolute -bottom-44 right-[45%] bg-gradient-to-r from-cyan-400 to-sky-500 sm:bottom-auto sm:-top-3 sm:-right-3 rounded-full p-3 sm:p-2",
     onClick: $options.hideModal
   }, null, 8 /* PROPS */, ["onClick"])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)], 2 /* CLASS */)], 2 /* CLASS */);
 }
