@@ -784,6 +784,9 @@ select {
 .bottom-6 {
   bottom: 1.5rem;
 }
+.right-10 {
+  right: 2.5rem;
+}
 .z-50 {
   z-index: 50;
 }
