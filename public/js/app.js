@@ -17621,7 +17621,10 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
       // pontuação do jogador
       isPlaying: false,
       gameOver: false,
-      speed: 300 // velocidade do jogo, quanto menor mais rápido
+      timeout: {},
+      speed: 300,
+      // velocidade do jogo, quanto menor mais rápido
+      windowWidth: window.innerWidth
     };
   },
   mounted: function mounted() {
@@ -17796,11 +17799,12 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
     //
     runGame: function runGame() {
       var _this5 = this;
+      clearTimeout(this.timeout);
       //A recursividade gera o mesmo efeito do setInterval,
       //Com a diferença de que a cada vez que é executado,
       //O timer é atualizado conforme a velocidade
       this.moveSnake();
-      setTimeout(function () {
+      this.timeout = setTimeout(function () {
         _this5.runGame();
       }, this.speed);
     },
@@ -17901,7 +17905,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
   },
   computed: {
     fieldWidth: function fieldWidth() {
-      return this.numCols * 32 + "px";
+      return Math.min(this.windowWidth, this.numCols * 32) + "px";
     },
     fieldHeight: function fieldHeight() {
       return this.numRows * 32 + "px";

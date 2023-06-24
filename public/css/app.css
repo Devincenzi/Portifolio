@@ -1108,6 +1108,9 @@ select {
   max-width: -moz-fit-content;
   max-width: fit-content;
 }
+.max-w-lg {
+  max-width: 32rem;
+}
 .shrink-0 {
   flex-shrink: 0;
 }
@@ -1213,6 +1216,9 @@ select {
 }
 .overflow-hidden {
   overflow: hidden;
+}
+.overflow-clip {
+  overflow: clip;
 }
 .overflow-x-clip {
   overflow-x: clip;

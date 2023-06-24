@@ -66,7 +66,9 @@ export default {
             score: 0, // pontuação do jogador
             isPlaying: false,
             gameOver: false,
+            timeout: {},
             speed: 300, // velocidade do jogo, quanto menor mais rápido
+            windowWidth: window.innerWidth
         };
     },
     mounted(){
@@ -249,11 +251,12 @@ export default {
         },
         //
         runGame(){
+            clearTimeout(this.timeout);
             //A recursividade gera o mesmo efeito do setInterval,
             //Com a diferença de que a cada vez que é executado,
             //O timer é atualizado conforme a velocidade
             this.moveSnake();
-            setTimeout(() => {
+            this.timeout = setTimeout(() => {
                 this.runGame();
             }, this.speed);
         },
@@ -342,8 +345,12 @@ export default {
         }
     },
     computed: {
-        fieldWidth(){ return this.numCols * 32 + "px"; },
-        fieldHeight(){ return this.numRows * 32 + "px"; },
+        fieldWidth(){ 
+            return Math.min(this.windowWidth, (this.numCols * 32)) + "px"; 
+        },
+        fieldHeight(){ 
+            return this.numRows * 32 + "px"; 
+        },
     }
 }
     
