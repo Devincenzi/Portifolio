@@ -38,7 +38,7 @@
             </div>
 
             <x-mark v-if="isToShowModal" 
-                    class="absolute bg-gradient-to-r from-cyan-400 to-sky-500 -top-3 -right-3 rounded-full p-2"
+                    class="absolute -bottom-10 right-[45%] bg-gradient-to-r from-cyan-400 to-sky-500 sm:bottom-auto sm:-top-3 sm:-right-3 rounded-full p-2"
                     @click="hideModal"></x-mark>
         </div>
     </div>
