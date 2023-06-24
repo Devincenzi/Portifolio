@@ -38,7 +38,7 @@
             </div>
 
             <x-mark v-if="isToShowModal" 
-                    class="absolute -bottom-10 right-[45%] bg-gradient-to-r from-cyan-400 to-sky-500 sm:bottom-auto sm:-top-3 sm:-right-3 rounded-full p-2"
+                    class="absolute bg-gradient-to-r from-cyan-400 to-sky-500 -top-3 -right-3 rounded-full p-2"
                     @click="hideModal"></x-mark>
         </div>
     </div>
@@ -173,7 +173,7 @@ export default{
     computed: {
         classObject() {
             return {
-                'backdrop-blur-xl bg-slate-800 bg-opacity-80 top-0 left-0 !fixed z-30 !max-h-screen h-full !w-full flex justify-center items-center': this.isToShowModal,
+                'backdrop-blur-md bg-slate-800 bg-opacity-60 top-0 left-0 !fixed z-30 !max-h-screen h-full !w-full flex justify-center items-center': this.isToShowModal,
             }
         },
         classOrientationText(){
