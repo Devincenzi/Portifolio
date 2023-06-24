@@ -302,7 +302,7 @@ export default {
             
             this.hasMoved = true;
 
-            key = '';
+            let key = '';
 
             if(isMobile)
                 key = event;

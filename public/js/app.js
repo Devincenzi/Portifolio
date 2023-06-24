@@ -17853,7 +17853,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
       //permite trocar a direção apenas uma vez por movimento
       if (this.hasMoved) return;
       this.hasMoved = true;
-      key = '';
+      var key = '';
       if (isMobile) key = event;else key = event.key;
       switch (key) {
         case "ArrowUp":
