@@ -21,9 +21,9 @@
                     Sinta-se à vontade para explorar e entrar em contato para conversarmos sobre possíveis projetos juntos!
                 </div>
                 <div class='mt-10 flex'>
-                    <a href='wa.me/5553999106606' title="Entre em contato pelo whatsapp!" class='mr-2 transition-transform hover:scale-125 hover:-translate-y-1 duration-200'><img class='w-8 sm:w-10' src='/images/whatsapp.png'/></a>
-                    <a href='github.com/Devincenzi' title="Meu Github" class='bg-gradient-to-br from-stone-200 to-stone-300 rounded-xl mx-2 transition-transform hover:scale-125 hover:-translate-y-1 duration-200'><img class='w-8 sm:w-10' src='/images/github.png'/></a>
-                    <a href='linkedin.com/in/andré-devincenzi-14b68b163/' title='Meu Linkedin' class="mx-2 transition-transform hover:scale-125 hover:-translate-y-1 duration-200"><img src='/images/linkedin.png' class='w-8 sm:w-10'/></a>
+                    <a href='https://wa.me/5553999106606' title="Entre em contato pelo whatsapp!" class='mr-2 transition-transform hover:scale-125 hover:-translate-y-1 duration-200'><img class='w-8 sm:w-10' src='/images/whatsapp.png'/></a>
+                    <a href='https://github.com/Devincenzi' title="Meu Github" class='bg-gradient-to-br from-stone-200 to-stone-300 rounded-xl mx-2 transition-transform hover:scale-125 hover:-translate-y-1 duration-200'><img class='w-8 sm:w-10' src='/images/github.png'/></a>
+                    <a href='https://linkedin.com/in/andré-devincenzi-14b68b163/' title='Meu Linkedin' class="mx-2 transition-transform hover:scale-125 hover:-translate-y-1 duration-200"><img src='/images/linkedin.png' class='w-8 sm:w-10'/></a>
                 </div>
             </div>
             <div class='flex justify-end'>
