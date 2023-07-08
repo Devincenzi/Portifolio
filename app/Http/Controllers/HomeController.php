@@ -19,8 +19,8 @@ class HomeController extends Controller
         return view ('pages.projetos.index');
     }
 
-    public function portifolio(){
-        return view('pages.projetos.portifolio');
+    public function portfolio(){
+        return view('pages.projetos.portfolio');
     }
 
     public function cobra(){

@@ -31,7 +31,7 @@ Route::get('/jogos/tap-ganso', [JogosController::class, 'ganso']);
 Route::get('/jogos/milho-grande', [JogosController::class, 'milhoGrande']);
 Route::get('/jogos/batalha-naval', [JogosController::class, 'batalhaNaval']);
 
-Route::get('/projetos/portifolio', [HomeController::class, 'portifolio']);
+Route::get('/projetos/portfolio', [HomeController::class, 'portfolio']);
 Route::get('/projetos/cobra', [HomeController::class, 'cobra']);
 
 require __DIR__.'/auth.php';
